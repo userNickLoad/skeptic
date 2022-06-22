@@ -5,23 +5,55 @@
     text-decoration: none;
 }
 :root {
-    --main-color: #1f1c22;
-    --secondery-color: #262729;
+    --main-color: #000;
+    --secondery-color: #1f1c22;
     --bood-color: #bf0000;
     --text-color: #fff;
 }
+#mb{
+    display: none;
+}
+p{
+    color: var(--text-color);
+}
+h1{
+    color:var(--bood-color);
+}
+#first{
+    display: flex;
+    width: 100%;
+    height: 80vh;
+    background-image: url(Dio-1-1360x765.jpg);
+    justify-content: flex-end;
+    margin:0;
+}
+#h11{
+    margin-top: 60vh;
+    width: 50vw;;
+    color: #fff;
+    text-align: end;
+    margin-right: 2vw;
+}
+#first #img{
+    display: none;
+
+}
 
 header, .aleatorio, footer{
+    background-color: var(--main-color);
     width: 100%;
     height: 10vh;
 }
 header {
+    border-bottom: 1px;
+    border-style: solid;
+    border-color: var(--secondery-color);
     display: flex;
     flex-direction: row;
-    background-color: var(--secondery-color);
     position: fixed;
     justify-content: space-between;
     z-index: 101;
+    
 }
 nav {
     margin-right: 10vw;
@@ -29,18 +61,7 @@ nav {
     flex-direction: row;
     align-items: center;
 }
-nav h1 {
-    height: 100%;
-    display:flex ;
-    align-items: center;
-    padding-left: 2.5vw;
-    padding-right: 2.5vw;
-    border-left: 1px;
-    border-right: 1px;
-    border-color: var(--main-color);
-    border-style: solid;
-    margin-bottom: 0;
-}
+
 
 nav h1 a, nav h1 a:hover {
     text-decoration: none;
@@ -111,25 +132,21 @@ nav div:hover > .submenu {
     flex-direction: column;
     position: absolute;
 }
-.inicial {
-    display: flex;
-    display: row;
-    width: 90%;
 
-    margin-top: 5vh;
-    margin-left: 5vw;
-    background-color: var(--main-color);
-    justify-items: center;
-}
 #h12 {
+    flex:1;
     margin-top: 10vh;
     margin-right: 20vw; 
     text-align: end;
+    color:#fff;
 }
 #jimi {
-    margin-left: 9vw;
-    width: 50vw;
-    height: 40vh;
+    width: 100vw;
+    height: auto;
+}
+#jimi img{
+    width: 100%;
+    height: auto;
 }
 div.inicial h1 a span {
     color: var(--bood-color);
@@ -145,10 +162,9 @@ div.inicial h1 a span {
     height: auto;
 }
 body{
-
+    background-color: var(--main-color);
     text-decoration: none;
     color: var(--text-color);
-    background-color: var(--main-color);
     overflow-x: hidden;
 
 }
@@ -171,11 +187,16 @@ table, table tr th, table tr, table tr td {
     border-style: solid;
     border-color: black;
 }
-table, .news {
-    background-color: var(--secondery-color);
+#news {
+    border-top: 1px;
+    border-bottom: 1px;
+    border-color: var(--secondery-color);
+    border-style: solid;
+    background-color: var(--main-color);
     width: 100%;
     height: auto;
-    border-radius: 10px;
+    margin: 0;
+
     
 }
 .new {
@@ -188,7 +209,7 @@ table, .news {
     padding-bottom: 4vh;
     border-bottom: 1px;
     border-style: solid;
-    border-color: var(--main-color);
+    border-color: var(--secondery-color);
 }
 
 div.news h1 {
@@ -200,6 +221,7 @@ div.news h1 hr {
     color: black;
 }
 div.newtex p{
+    color:#fff;
     display: flex;
     font-size: 2vw;
     margin-left: 0;
@@ -213,7 +235,7 @@ div.newtex p{
     display: flex;
     flex-direction: column;
     border-left: 1px;
-    border-color: var(--main-color);
+    border-color: var(--secondery-color);
     border-style: solid;
 }
 div.newtex a {
@@ -239,10 +261,11 @@ table tr th, td, caption {
 }
 
 footer {
-    border-top-color: var(--bood-colo);
+    height: 15vh;
+    border-top: 1px;
+    border-style: solid;
+    border-color: var(--secondery-color);
     display: flex;
-    margin-top: 5vh;
-    background-color: var(--secondery-color);
 }
 footer div {
     display: flex;
@@ -251,6 +274,10 @@ footer div {
     margin-right: 5vw;
     align-items: center;
     justify-content: flex-end;
+}
+footer div p {
+    color:var(--secondery-color);
+    font-size: 2rem;
 }
 footer div h1 span {
     color: var(--bood-colo);
@@ -261,7 +288,38 @@ nav {
     flex-direction: row;
     align-items: center;
 }
+.inicial {
+    display: flex;
+    display: row;
+    margin-left: 0;
+    width: 90%;
+    margin:0;
+    background-color: var(--main-color);
+    justify-items: center;
+}
+.MDS {
+    margin-bottom: 0;
+    border-left: 1px;
+    border-right: 1px;
+    height: 100%;
+    display:flex ;
+    align-items: center;
+    padding-left: 2.5vw;
+    padding-right: 2.5vw;
+    border-style: solid;
+    border-color: #1f1c22;
+}
+.text p {
+    
+        margin-top: 5vh;
+        padding-left: 2vw;
+        padding-right: 2vw;
+        border-left: 1px;
+        border-right: 1px;
+        border-style: solid;
+        border-color: var(--secondery-color);
 
+}
 
 @media (max-width: 600px) {
     header, .aleatorio, footer{
@@ -274,6 +332,12 @@ nav {
         background-color: var(--secondery-color);
         position: fixed;
         justify-content: space-between;
+    }
+    #first{
+        display: none;
+    }
+    #mb{
+        display: flex;
     }
     nav h1 {
         height: auto;
@@ -356,8 +420,7 @@ nav {
     }
     #jimi, .carousel {
         margin-left: 0;
-        width: auto;
-        height: 25vh;
+        flex:1;
         display: flex;
         align-items: center;
         justify-items: center;
@@ -371,13 +434,12 @@ nav {
 
     body{
         text-decoration: none;
-        color: var(--text-color);
         background-color: var(--main-color);
         overflow-x: hidden;
     }
 
-    table, .news {
-        background-color: var(--secondery-color);
+    .news {
+        background-color: var(--main-color);
         width: 100%;
         height: auto;
         border-radius: 10px;
@@ -394,7 +456,7 @@ nav {
         padding-bottom: 4vh;
         border-bottom: 1px;
         border-style: solid;
-        border-color: var(--main-color);
+        border-color: var(--secondery-color);
         align-items: center;
     }
     div.new img {
@@ -435,9 +497,10 @@ nav {
         text-decoration: none;
     }
     footer {
-        height: 10vh;
+        height: 15vh;
     }
-    footer h2 {
-        font-size: 5vw;
+    footer div p {
+        color:var(--secondery-color);
+        font-size: 1rem;
     }
 }
